@@ -1,14 +1,14 @@
 <template>
-
+  <px-header />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PxHeader from './components/PxHeader.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PxHeader
   }
 }
 </script>
