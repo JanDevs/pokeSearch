@@ -1,14 +1,19 @@
 <template>
+<main>
   <px-header />
+  <home />
+  </main>
 </template>
 
 <script>
-import PxHeader from './components/PxHeader.vue'
+import PxHeader from './components/PxHeader.vue';
+import Home from './views/Home.vue';
 
 export default {
   name: 'App',
   components: {
-    PxHeader
+    PxHeader,
+    Home
   }
 }
 </script>
