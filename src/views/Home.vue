@@ -1,6 +1,6 @@
 <template>
     <div>
-        asd
+        {{pokemon[0]}}
     </div>
 </template>
 <script>
@@ -19,6 +19,6 @@ export default {
         api.getPokemon()
             .then(pokemon => (this.pokemon = pokemon))
             .finally(() => this.isLoading = false)
-    }
+    },
 }
 </script>
