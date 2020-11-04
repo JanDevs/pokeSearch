@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "@ianaya89/vue-cli-plugin-tailwind": "^1.9.5",
+    "@ianaya89/vue-cli-plugin-tailwind": "~1.1.0",
     "vue": "^2.6.11"
   },
   "devDependencies": {
