@@ -2,21 +2,19 @@
 <main>
   <px-header />
   <home />
-  <px-assets-table />
   </main>
 </template>
 
 <script>
 import PxHeader from './components/PxHeader.vue';
 import Home from './views/Home.vue';
-import PxAssetsTable from './components/PxAssetsTable.vue';
+
 
 export default {
   name: 'App',
   components: {
     PxHeader,
     Home,
-    PxAssetsTable
   }
 }
 </script>

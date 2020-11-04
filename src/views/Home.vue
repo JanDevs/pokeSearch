@@ -1,24 +1,33 @@
 <template>
     <div>
-        {{pokemon[0]}}
+        <px-assets-table :pokemon="pokemon" />
     </div>
 </template>
 <script>
 import api from '@/api'
+import pxAssetsTable from '@/components/PxAssetsTable'
 export default {
     name: 'Home',
-    props: ['Holis'],
+    components: { pxAssetsTable },
     data(){
         return {
             isLoading: false,
-            pokemon: []
+           
+            pokemon: [],
+            that: this      
         }
     },
-    created(){
+    beforeCreate(){
+      
         this.isLoading = true;
-        api.getPokemon()
-            .then(pokemon => (this.pokemon = pokemon))
-            .finally(() => this.isLoading = false)
+        for (let index = 0; index < 50; index++) {
+            api.getPokemon(index)
+                .then(a => this.pokemon.push(a));
+
+        }
+    },
+    mounted(){
+     
     },
 }
 </script>

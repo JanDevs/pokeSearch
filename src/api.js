@@ -1,8 +1,10 @@
 const url = 'https://pokeapi.co/api/v2';
 
-function getPokemon(){
-    return fetch(`${url}/pokemon/?limit=20`)
-        .then(res => res.json())
+function getPokemon(id){
+  
+    return fetch(`${url}/pokemon/${id}`)
+        .then(res =>  res.json())
+    
 }
 
 function getLocation(id){
@@ -10,6 +12,7 @@ function getLocation(id){
         .then(res => res.json())
         .then(res => res.location_area.name)
 }
+
 
 export default {
     getPokemon,
