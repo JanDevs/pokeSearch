@@ -3,14 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "vue-cli-service serve",
+    "start": "vue-cli-service build",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "@ianaya89/vue-cli-plugin-tailwind": "~1.1.0",
+    "tailwindcss": "^1.9.5",
     "vue": "^2.6.11"
   },
   "devDependencies": {
