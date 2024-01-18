@@ -1,13 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
+import {useState} from "react";
+
+
+function MyButton({txt}){
+
+  return(
+      <button>
+        {txt}
+      </button>
+  );
+}
+
+function MyNav(){
+  return (
+      <nav>
+        <MyButton txt={"Primer Botón"}/>
+        <MyButton txt={"Segundo botón"}/>
+      </nav>
+  );
+}
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          <MyNav />
         </p>
         <a
           className="App-link"
